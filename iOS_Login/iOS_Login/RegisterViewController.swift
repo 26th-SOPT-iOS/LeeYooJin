@@ -12,23 +12,34 @@ class RegisterViewController: UIViewController {
 
    
     
-    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var registerButton: UIButton!
     
     @IBAction func registerButton(_ sender: Any) {
         guard let receiveViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
               
-              receiveViewController.name = nameTextField.text
+              receiveViewController.name = emailTextField.text
               receiveViewController.pass = passTextField.text
-        self.present(receiveViewController, animated: true)
-        self.navigationController?.popViewController(animated: true)
+        //self.present(receiveViewController, animated: true)
+       // self.navigationController?.popViewController(animated: true)
         
         
        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameTextField.layer.cornerRadius = 22
+        nameTextField.addLeftPadding()
+        emailTextField.layer.cornerRadius = 22
+        emailTextField.addLeftPadding()
+        passTextField.layer.cornerRadius = 22
+        passTextField.addLeftPadding()
+        registerButton.layer.cornerRadius = 22
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         // Do any additional setup after loading the view.
     }
     

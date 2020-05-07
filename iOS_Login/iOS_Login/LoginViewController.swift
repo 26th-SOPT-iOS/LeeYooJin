@@ -24,13 +24,14 @@ class LoginViewController: UIViewController {
            guard let name = self.name else { return }
            guard let pass = self.pass else { return }
            
-           nameTextField.text = name
-           passTextField.text = pass
+           //nameTextField.text = name
+           //passTextField.text = pass
        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         setLabels()
         // Do any additional setup after loading the view.
     }

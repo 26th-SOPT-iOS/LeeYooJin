@@ -28,6 +28,12 @@
 		AE277F9E2451B88100738EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE277FA82451BCF200738EEF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AE277FAA2451BCFF00738EEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AEAA5FB52463B73500AD2295 /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Medium.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
+		AEAA5FB62463B73500AD2295 /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Bold.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
+		AEAA5FB72463B73500AD2295 /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Light.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
+		AEAA5FB9246404BF00AD2295 /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
+		AEAA5FBA246404BF00AD2295 /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
+		AEAA5FBB246404C200AD2295 /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 		AE277F8F2451B88000738EEF /* iOS_Login */ = {
 			isa = PBXGroup;
 			children = (
+				AEAA5FB8246404B400AD2295 /* font */,
+				AEAA5FB62463B73500AD2295 /* KoPubWorld Dotum Bold.ttf */,
+				AEAA5FB72463B73500AD2295 /* KoPubWorld Dotum Light.ttf */,
+				AEAA5FB52463B73500AD2295 /* KoPubWorld Dotum Medium.ttf */,
 				AE277F902451B88000738EEF /* AppDelegate.swift */,
 				AE277F922451B88000738EEF /* SceneDelegate.swift */,
 				AE277F942451B88000738EEF /* ViewController.swift */,
@@ -71,6 +81,16 @@
 				AE277F9E2451B88100738EEF /* Info.plist */,
 			);
 			path = iOS_Login;
+			sourceTree = "<group>";
+		};
+		AEAA5FB8246404B400AD2295 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				AEAA5FBB246404C200AD2295 /* KoPubWorld Dotum Bold.ttf */,
+				AEAA5FBA246404BF00AD2295 /* KoPubWorld Dotum Light.ttf */,
+				AEAA5FB9246404BF00AD2295 /* KoPubWorld Dotum Medium.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
