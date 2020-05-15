@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         receiveViewController.name = nameTextField.text
         receiveViewController.pass = passTextField.text
         
-       // self.present(receiveViewController, animated: true, completion: nil)
+       
+        self.present(receiveViewController, animated: true, completion: nil)
     }
     
    

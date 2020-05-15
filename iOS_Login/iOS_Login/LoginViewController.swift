@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.isNavigationBarHidden = true
         setLabels()
         // Do any additional setup after loading the view.
     }

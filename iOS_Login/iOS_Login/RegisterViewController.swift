@@ -22,8 +22,8 @@ class RegisterViewController: UIViewController {
               
               receiveViewController.name = emailTextField.text
               receiveViewController.pass = passTextField.text
-        //self.present(receiveViewController, animated: true)
-       // self.navigationController?.popViewController(animated: true)
+        self.present(receiveViewController, animated: true)
+        self.navigationController?.popViewController(animated: true)
         
         
        

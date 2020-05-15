@@ -15,6 +15,10 @@
 		AE277F9D2451B88100738EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE277F9B2451B88100738EEF /* LaunchScreen.storyboard */; };
 		AE277FA92451BCF200738EEF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE277FA82451BCF200738EEF /* RegisterViewController.swift */; };
 		AE277FAB2451BCFF00738EEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE277FAA2451BCFF00738EEF /* LoginViewController.swift */; };
+		AE7DE83C246E64CF0040BA1A /* FreindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */; };
+		AE7DE83E246E66C00040BA1A /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83D246E66C00040BA1A /* MyCell.swift */; };
+		AE7DE840246E69320040BA1A /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83F246E69320040BA1A /* FriendCell.swift */; };
+		AE7DE842246E6A800040BA1A /* FriendInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE841246E6A800040BA1A /* FriendInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		AE277F9E2451B88100738EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE277FA82451BCF200738EEF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AE277FAA2451BCFF00738EEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreindTableViewController.swift; sourceTree = "<group>"; };
+		AE7DE83D246E66C00040BA1A /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		AE7DE83F246E69320040BA1A /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		AE7DE841246E6A800040BA1A /* FriendInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInformation.swift; sourceTree = "<group>"; };
 		AEAA5FB52463B73500AD2295 /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Medium.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
 		AEAA5FB62463B73500AD2295 /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Bold.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
 		AEAA5FB72463B73500AD2295 /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Light.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 				AE277F922451B88000738EEF /* SceneDelegate.swift */,
 				AE277F942451B88000738EEF /* ViewController.swift */,
 				AE277F962451B88000738EEF /* Main.storyboard */,
+				AE7DE841246E6A800040BA1A /* FriendInformation.swift */,
+				AE7DE83F246E69320040BA1A /* FriendCell.swift */,
+				AE7DE83D246E66C00040BA1A /* MyCell.swift */,
+				AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */,
 				AE277FA82451BCF200738EEF /* RegisterViewController.swift */,
 				AE277FAA2451BCFF00738EEF /* LoginViewController.swift */,
 				AE277F992451B88100738EEF /* Assets.xcassets */,
@@ -167,6 +179,10 @@
 				AE277F952451B88000738EEF /* ViewController.swift in Sources */,
 				AE277F912451B88000738EEF /* AppDelegate.swift in Sources */,
 				AE277F932451B88000738EEF /* SceneDelegate.swift in Sources */,
+				AE7DE840246E69320040BA1A /* FriendCell.swift in Sources */,
+				AE7DE83C246E64CF0040BA1A /* FreindTableViewController.swift in Sources */,
+				AE7DE842246E6A800040BA1A /* FriendInformation.swift in Sources */,
+				AE7DE83E246E66C00040BA1A /* MyCell.swift in Sources */,
 				AE277FAB2451BCFF00738EEF /* LoginViewController.swift in Sources */,
 				AE277FA92451BCF200738EEF /* RegisterViewController.swift in Sources */,
 			);
