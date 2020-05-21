@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,13 +15,21 @@
 		AE277F9D2451B88100738EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE277F9B2451B88100738EEF /* LaunchScreen.storyboard */; };
 		AE277FA92451BCF200738EEF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE277FA82451BCF200738EEF /* RegisterViewController.swift */; };
 		AE277FAB2451BCFF00738EEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE277FAA2451BCFF00738EEF /* LoginViewController.swift */; };
+		AE5E74C5246FBD4F007D5D5D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74C4246FBD4F007D5D5D /* APIConstants.swift */; };
+		AE5E74C7246FBE62007D5D5D /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74C6246FBE62007D5D5D /* SigninData.swift */; };
+		AE5E74C9246FC561007D5D5D /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74C8246FC561007D5D5D /* NetworkResult.swift */; };
+		AE5E74CB246FC642007D5D5D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74CA246FC642007D5D5D /* LoginService.swift */; };
+		AE5E74CD246FD3A6007D5D5D /* SignupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74CC246FD3A6007D5D5D /* SignupData.swift */; };
+		AE5E74CF246FD6CC007D5D5D /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E74CE246FD6CC007D5D5D /* SignupService.swift */; };
 		AE7DE83C246E64CF0040BA1A /* FreindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */; };
 		AE7DE83E246E66C00040BA1A /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83D246E66C00040BA1A /* MyCell.swift */; };
 		AE7DE840246E69320040BA1A /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE83F246E69320040BA1A /* FriendCell.swift */; };
 		AE7DE842246E6A800040BA1A /* FriendInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DE841246E6A800040BA1A /* FriendInformation.swift */; };
+		CE2CE769EE0888883FDA37C4 /* Pods_iOS_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B1D7B68D575BCFC8A37F1E /* Pods_iOS_Login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430D4C38F3A584E26CC0DA4E /* Pods-iOS_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Login.debug.xcconfig"; path = "Target Support Files/Pods-iOS_Login/Pods-iOS_Login.debug.xcconfig"; sourceTree = "<group>"; };
 		AE277F8D2451B88000738EEF /* iOS_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE277F902451B88000738EEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE277F922451B88000738EEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,16 +40,24 @@
 		AE277F9E2451B88100738EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE277FA82451BCF200738EEF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AE277FAA2451BCFF00738EEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE5E74BD246FAD09007D5D5D /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Medium.ttf"; path = "../KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
+		AE5E74BE246FAD0A007D5D5D /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Bold.ttf"; path = "../KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
+		AE5E74BF246FAD0A007D5D5D /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Light.ttf"; path = "../KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
+		AE5E74C4246FBD4F007D5D5D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		AE5E74C6246FBE62007D5D5D /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
+		AE5E74C8246FC561007D5D5D /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		AE5E74CA246FC642007D5D5D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		AE5E74CC246FD3A6007D5D5D /* SignupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupData.swift; sourceTree = "<group>"; };
+		AE5E74CE246FD6CC007D5D5D /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
 		AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreindTableViewController.swift; sourceTree = "<group>"; };
 		AE7DE83D246E66C00040BA1A /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		AE7DE83F246E69320040BA1A /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		AE7DE841246E6A800040BA1A /* FriendInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInformation.swift; sourceTree = "<group>"; };
-		AEAA5FB52463B73500AD2295 /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Medium.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
-		AEAA5FB62463B73500AD2295 /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Bold.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
-		AEAA5FB72463B73500AD2295 /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KoPubWorld Dotum Light.ttf"; path = "../../../../../Downloads/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
 		AEAA5FB9246404BF00AD2295 /* KoPubWorld Dotum Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Medium.ttf"; sourceTree = "<group>"; };
 		AEAA5FBA246404BF00AD2295 /* KoPubWorld Dotum Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Light.ttf"; sourceTree = "<group>"; };
 		AEAA5FBB246404C200AD2295 /* KoPubWorld Dotum Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum Bold.ttf"; sourceTree = "<group>"; };
+		D0B1D7B68D575BCFC8A37F1E /* Pods_iOS_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A94E5832F02AF93B2EB340 /* Pods-iOS_Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Login.release.xcconfig"; path = "Target Support Files/Pods-iOS_Login/Pods-iOS_Login.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2CE769EE0888883FDA37C4 /* Pods_iOS_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC0EBFF5060F717702AA595 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				430D4C38F3A584E26CC0DA4E /* Pods-iOS_Login.debug.xcconfig */,
+				D2A94E5832F02AF93B2EB340 /* Pods-iOS_Login.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		18BBED49B2E4B5A89AE6FD1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1D7B68D575BCFC8A37F1E /* Pods_iOS_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE277F842451B88000738EEF = {
 			isa = PBXGroup;
 			children = (
 				AE277F8F2451B88000738EEF /* iOS_Login */,
 				AE277F8E2451B88000738EEF /* Products */,
+				0FC0EBFF5060F717702AA595 /* Pods */,
+				18BBED49B2E4B5A89AE6FD1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,30 +110,92 @@
 		AE277F8F2451B88000738EEF /* iOS_Login */ = {
 			isa = PBXGroup;
 			children = (
-				AEAA5FB8246404B400AD2295 /* font */,
-				AEAA5FB62463B73500AD2295 /* KoPubWorld Dotum Bold.ttf */,
-				AEAA5FB72463B73500AD2295 /* KoPubWorld Dotum Light.ttf */,
-				AEAA5FB52463B73500AD2295 /* KoPubWorld Dotum Medium.ttf */,
-				AE277F902451B88000738EEF /* AppDelegate.swift */,
-				AE277F922451B88000738EEF /* SceneDelegate.swift */,
-				AE277F942451B88000738EEF /* ViewController.swift */,
-				AE277F962451B88000738EEF /* Main.storyboard */,
-				AE7DE841246E6A800040BA1A /* FriendInformation.swift */,
-				AE7DE83F246E69320040BA1A /* FriendCell.swift */,
-				AE7DE83D246E66C00040BA1A /* MyCell.swift */,
-				AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */,
-				AE277FA82451BCF200738EEF /* RegisterViewController.swift */,
-				AE277FAA2451BCFF00738EEF /* LoginViewController.swift */,
-				AE277F992451B88100738EEF /* Assets.xcassets */,
-				AE277F9B2451B88100738EEF /* LaunchScreen.storyboard */,
+				AE5E74BC246FACEE007D5D5D /* Resources */,
+				AE5E74C0246FAD63007D5D5D /* Sources */,
 				AE277F9E2451B88100738EEF /* Info.plist */,
 			);
 			path = iOS_Login;
 			sourceTree = "<group>";
 		};
+		AE5E74BC246FACEE007D5D5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E74D22476B886007D5D5D /* Network */,
+				AE277F992451B88100738EEF /* Assets.xcassets */,
+				AE5E74C2246FADC6007D5D5D /* Storyboards */,
+				AEAA5FB8246404B400AD2295 /* font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE5E74C0246FAD63007D5D5D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E74C3246FAE17007D5D5D /* Cell */,
+				AE5E74C1246FAD7C007D5D5D /* ViewControllers */,
+				AE277F902451B88000738EEF /* AppDelegate.swift */,
+				AE277F922451B88000738EEF /* SceneDelegate.swift */,
+				AE7DE841246E6A800040BA1A /* FriendInformation.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AE5E74C1246FAD7C007D5D5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE277FA82451BCF200738EEF /* RegisterViewController.swift */,
+				AE277FAA2451BCFF00738EEF /* LoginViewController.swift */,
+				AE277F942451B88000738EEF /* ViewController.swift */,
+				AE7DE83B246E64CF0040BA1A /* FreindTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE5E74C2246FADC6007D5D5D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE277F962451B88000738EEF /* Main.storyboard */,
+				AE277F9B2451B88100738EEF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE5E74C3246FAE17007D5D5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AE7DE83F246E69320040BA1A /* FriendCell.swift */,
+				AE7DE83D246E66C00040BA1A /* MyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE5E74D024763451007D5D5D /* NetworkData */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E74C6246FBE62007D5D5D /* SigninData.swift */,
+				AE5E74CC246FD3A6007D5D5D /* SignupData.swift */,
+			);
+			path = NetworkData;
+			sourceTree = "<group>";
+		};
+		AE5E74D22476B886007D5D5D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E74D024763451007D5D5D /* NetworkData */,
+				AE5E74C4246FBD4F007D5D5D /* APIConstants.swift */,
+				AE5E74CE246FD6CC007D5D5D /* SignupService.swift */,
+				AE5E74CA246FC642007D5D5D /* LoginService.swift */,
+				AE5E74C8246FC561007D5D5D /* NetworkResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		AEAA5FB8246404B400AD2295 /* font */ = {
 			isa = PBXGroup;
 			children = (
+				AE5E74BE246FAD0A007D5D5D /* KoPubWorld Dotum Bold.ttf */,
+				AE5E74BF246FAD0A007D5D5D /* KoPubWorld Dotum Light.ttf */,
+				AE5E74BD246FAD09007D5D5D /* KoPubWorld Dotum Medium.ttf */,
 				AEAA5FBB246404C200AD2295 /* KoPubWorld Dotum Bold.ttf */,
 				AEAA5FBA246404BF00AD2295 /* KoPubWorld Dotum Light.ttf */,
 				AEAA5FB9246404BF00AD2295 /* KoPubWorld Dotum Medium.ttf */,
@@ -112,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE277FA12451B88100738EEF /* Build configuration list for PBXNativeTarget "iOS_Login" */;
 			buildPhases = (
+				C9D99611D6C3CC18A490489F /* [CP] Check Pods Manifest.lock */,
 				AE277F892451B88000738EEF /* Sources */,
 				AE277F8A2451B88000738EEF /* Frameworks */,
 				AE277F8B2451B88000738EEF /* Resources */,
+				4751427157CA978A853A0005 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,17 +271,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4751427157CA978A853A0005 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Login/Pods-iOS_Login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Login/Pods-iOS_Login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_Login/Pods-iOS_Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D99611D6C3CC18A490489F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE277F892451B88000738EEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE277F952451B88000738EEF /* ViewController.swift in Sources */,
+				AE5E74CD246FD3A6007D5D5D /* SignupData.swift in Sources */,
+				AE5E74CB246FC642007D5D5D /* LoginService.swift in Sources */,
+				AE5E74CF246FD6CC007D5D5D /* SignupService.swift in Sources */,
 				AE277F912451B88000738EEF /* AppDelegate.swift in Sources */,
 				AE277F932451B88000738EEF /* SceneDelegate.swift in Sources */,
+				AE5E74C9246FC561007D5D5D /* NetworkResult.swift in Sources */,
 				AE7DE840246E69320040BA1A /* FriendCell.swift in Sources */,
 				AE7DE83C246E64CF0040BA1A /* FreindTableViewController.swift in Sources */,
 				AE7DE842246E6A800040BA1A /* FriendInformation.swift in Sources */,
+				AE5E74C7246FBE62007D5D5D /* SigninData.swift in Sources */,
+				AE5E74C5246FBD4F007D5D5D /* APIConstants.swift in Sources */,
 				AE7DE83E246E66C00040BA1A /* MyCell.swift in Sources */,
 				AE277FAB2451BCFF00738EEF /* LoginViewController.swift in Sources */,
 				AE277FA92451BCF200738EEF /* RegisterViewController.swift in Sources */,
@@ -326,6 +474,7 @@
 		};
 		AE277FA22451B88100738EEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430D4C38F3A584E26CC0DA4E /* Pods-iOS_Login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +492,7 @@
 		};
 		AE277FA32451B88100738EEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A94E5832F02AF93B2EB340 /* Pods-iOS_Login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
