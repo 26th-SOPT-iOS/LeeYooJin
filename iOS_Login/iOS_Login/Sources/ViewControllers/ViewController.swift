@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 class ViewController: UIViewController {
 
@@ -16,11 +17,28 @@ class ViewController: UIViewController {
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet var autoCheckBox: BEMCheckBox!
+    
+   
+    @IBAction func autoLogin(_ sender: BEMCheckBox) {
+        if autoCheckBox.on == true {
+            print("Auto Login")
+            // 자동 로그인 선택 시 로그인 하면서 uid, pwd 저장
+            UserDefaults.standard.set(self.idTextField.text, forKey: "id")
+            UserDefaults.standard.set(self.passTextField.text, forKey: "pw")
+        }
+    }
     
     @IBAction func loginButton(_ sender: Any) {
         guard let inputID = idTextField.text else { return }
         guard let inputPWD = passTextField.text else { return }
+       
         
+        login(inputID,inputPWD)
+        
+}
+    
+    func login(_ inputID: String, _ inputPWD: String) {    
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in
             switch networkResult {
             case .success(let token):
@@ -42,7 +60,7 @@ class ViewController: UIViewController {
 
             }
         }
-}
+    }
     
     func setTextField() {
         idTextField.addLeftPadding()
@@ -66,6 +84,18 @@ class ViewController: UIViewController {
         setNavi()
         idTextField.text = textID
         passTextField.text = textPWD
+        
+        //회원가입 후 자동로그인
+        if idTextField.text != ""{
+            login(self.idTextField.text!, self.passTextField.text!)
+        }
+        
+        //자동로그인 설정
+        if let userID = UserDefaults.standard.string(forKey: "id"){
+            let userPWD = UserDefaults.standard.string(forKey: "pw")
+            login(userID, userPWD!)
+        }
+        
     }
 
 

@@ -29,37 +29,20 @@ class RegisterViewController: UIViewController {
         SignupService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
             switch networkResult {
             case .success:
-                LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in
-                    switch networkResult {
-                    case .success(let token):
-                        guard let token = token as? String else { return }
-                        UserDefaults.standard.set(token, forKey: "token")
-                        
-                        guard let signinController = self.storyboard?.instantiateViewController(identifier: "SigninViewController") as? ViewController else { return }
-                        
-                        signinController.textID = inputID
-                        signinController.textPWD = inputPWD
-                        
-                        self.navigationController?.pushViewController(signinController, animated: true)
-                        
-                        guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else { return }
-                        tabbarController.modalPresentationStyle = .fullScreen
-                        self.present(tabbarController, animated: true, completion: nil)
-                        
-                    case .requestErr(let message):
-                         guard let message = message as? String else { return }
-                         let alertViewController = UIAlertController(title: "회원가입 실패", message: "이미 존재하는 아이디입니다", preferredStyle: .alert)
-                         let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
-                         alertViewController.addAction(action)
-                         self.present(alertViewController, animated: true, completion: nil)
-                    case .pathErr: print("path")
-                    case .serverErr: print("serverErr")
-                    case .networkFail: print("networkFail")
-                    }
-                }
+                guard let signinController = self.storyboard?.instantiateViewController(identifier: "SigninViewController") as? ViewController else { return }
+                
+                signinController.textID = inputID
+                signinController.textPWD = inputPWD
+                
+                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.pushViewController(signinController, animated: true)
+                
             case .requestErr(let message):
                 guard let message = message as? String else { return }
-                print(message)
+                let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                               alertViewController.addAction(action)
+                               self.present(alertViewController, animated: true, completion: nil)
             case .pathErr: print("path")
             case .serverErr: print("serverErr")
             case .networkFail: print("networkFail")
@@ -97,6 +80,7 @@ class RegisterViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

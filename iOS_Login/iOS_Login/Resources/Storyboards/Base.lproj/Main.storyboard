@@ -10,6 +10,9 @@
         <array key="KoPubWorld Dotum Bold.ttf">
             <string>KoPubWorldDotumBold</string>
         </array>
+        <array key="KoPubWorld Dotum Light.ttf">
+            <string>KoPubWorldDotumLight</string>
+        </array>
         <array key="KoPubWorld Dotum Medium.ttf">
             <string>KoPubWorldDotumMedium</string>
         </array>
@@ -56,7 +59,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2e-ud-aEW"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33C-V6-k9r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eON-FQ-6jW">
@@ -85,6 +88,19 @@
                                     <segue destination="HEM-Ur-38g" kind="push" id="9aX-Kj-q8f"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UE-AF-f5X" customClass="BEMCheckBox">
+                                <rect key="frame" x="46" y="438" width="17" height="14"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <action selector="autoLogin:" destination="BYZ-38-t0r" eventType="valueChanged" id="BxM-u5-mPX"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUw-i3-DfO">
+                                <rect key="frame" x="68" y="436" width="53" height="19"/>
+                                <fontDescription key="fontDescription" name="KoPubWorldDotumLight" family="KoPubWorldDotum" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -92,23 +108,29 @@
                             <constraint firstItem="lo5-Ot-PJj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="5VH-mr-gmG"/>
                             <constraint firstItem="lo5-Ot-PJj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="6EN-3d-iPa"/>
                             <constraint firstItem="orh-Ss-IgW" firstAttribute="top" secondItem="6EO-2n-PxB" secondAttribute="bottom" constant="18" id="75j-6H-aTV"/>
+                            <constraint firstItem="OUw-i3-DfO" firstAttribute="leading" secondItem="3UE-AF-f5X" secondAttribute="trailing" constant="5" id="7G7-b2-i7a"/>
                             <constraint firstItem="eON-FQ-6jW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="DKi-ey-OaU"/>
                             <constraint firstItem="aLB-vE-ite" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="FOP-Wi-HXe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eON-FQ-6jW" secondAttribute="trailing" constant="76" id="Kwn-So-chr"/>
+                            <constraint firstItem="3UE-AF-f5X" firstAttribute="top" secondItem="orh-Ss-IgW" secondAttribute="bottom" constant="12" id="LG7-o8-M65"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aLB-vE-ite" secondAttribute="trailing" constant="37" id="TqJ-7R-RbY"/>
                             <constraint firstItem="orh-Ss-IgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="WoG-jx-Z0a"/>
+                            <constraint firstItem="aLB-vE-ite" firstAttribute="top" secondItem="OUw-i3-DfO" secondAttribute="bottom" constant="10" id="Xbv-cT-34f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="orh-Ss-IgW" secondAttribute="trailing" constant="37" id="cZB-Ev-Gzj"/>
+                            <constraint firstItem="3UE-AF-f5X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="d73-3G-XsM"/>
                             <constraint firstItem="6EO-2n-PxB" firstAttribute="top" secondItem="lo5-Ot-PJj" secondAttribute="bottom" constant="58" id="djC-l2-hSG"/>
                             <constraint firstItem="6EO-2n-PxB" firstAttribute="height" secondItem="orh-Ss-IgW" secondAttribute="height" id="dld-m6-NMs"/>
                             <constraint firstItem="6EO-2n-PxB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="emj-eH-fdu"/>
                             <constraint firstItem="aLB-vE-ite" firstAttribute="top" secondItem="orh-Ss-IgW" secondAttribute="bottom" constant="39" id="fxG-Dt-RRp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EO-2n-PxB" secondAttribute="trailing" constant="37" id="u4f-hg-w9F"/>
+                            <constraint firstItem="OUw-i3-DfO" firstAttribute="top" secondItem="orh-Ss-IgW" secondAttribute="bottom" constant="10" id="wZL-pI-xM4"/>
                             <constraint firstItem="eON-FQ-6jW" firstAttribute="top" secondItem="aLB-vE-ite" secondAttribute="bottom" constant="17" id="wZR-A5-kYd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="2lf-St-4CC"/>
                     <connections>
+                        <outlet property="autoCheckBox" destination="3UE-AF-f5X" id="jF8-c6-rq6"/>
                         <outlet property="idTextField" destination="6EO-2n-PxB" id="bvS-0m-UCm"/>
                         <outlet property="loginButton" destination="aLB-vE-ite" id="YyT-lv-9Gc"/>
                         <outlet property="passTextField" destination="orh-Ss-IgW" id="xjp-LD-80Z"/>
@@ -253,7 +275,7 @@
             </objects>
             <point key="canvasLocation" x="1482.4000000000001" y="101.97044334975369"/>
         </scene>
-        <!--홈-->
+        <!--Login View Controller-->
         <scene sceneID="ndI-OM-7My">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" id="0Sq-My-Oc1" customClass="LoginViewController" customModule="iOS_Login" customModuleProvider="target" sceneMemberID="viewController">
@@ -265,10 +287,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVq-H9-N7W">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1060"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="L9R-z1-ndq">
-                                                <rect key="frame" x="28" y="242" width="319" height="885"/>
+                                                <rect key="frame" x="28" y="152" width="319" height="885"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="eed-8i-OYW">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="885"/>
@@ -315,7 +337,7 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oursoptBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-Ws-gPh">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <rect key="frame" x="0.0" y="-90" width="375" height="210"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="210" id="22d-zL-wSC"/>
                                                     <constraint firstAttribute="width" constant="375" id="Bct-eg-98s"/>
@@ -332,7 +354,7 @@
                                             <constraint firstItem="jB0-Ws-gPh" firstAttribute="leading" secondItem="WVq-H9-N7W" secondAttribute="leading" id="MNJ-ZJ-9Kd"/>
                                             <constraint firstItem="L9R-z1-ndq" firstAttribute="top" secondItem="jB0-Ws-gPh" secondAttribute="top" constant="242" id="W0u-qy-ujd"/>
                                             <constraint firstAttribute="bottom" secondItem="jB0-Ws-gPh" secondAttribute="bottom" constant="940" id="f75-oD-ogd"/>
-                                            <constraint firstItem="jB0-Ws-gPh" firstAttribute="top" secondItem="WVq-H9-N7W" secondAttribute="top" id="ysA-2a-rxu"/>
+                                            <constraint firstItem="jB0-Ws-gPh" firstAttribute="top" secondItem="WVq-H9-N7W" secondAttribute="top" constant="-90" id="ysA-2a-rxu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -357,12 +379,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XSe-Xb-erg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="homeUnselectedIc" selectedImage="homeSelectedIc" id="eKN-hv-Mah"/>
-                    <navigationItem key="navigationItem" id="OcC-rZ-boS"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="nZp-5n-zyJ">
+                        <barButtonItem key="rightBarButtonItem" title="logout" id="raC-cw-4Nc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logoutButton:" destination="0Sq-My-Oc1" id="i9j-pj-gwQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewa-Q5-G5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="836"/>
+            <point key="canvasLocation" x="1687.2" y="835.71428571428578"/>
         </scene>
         <!--Freind Table View Controller-->
         <scene sceneID="c96-bF-9Cx">
@@ -504,7 +534,7 @@
                         <color key="selectedImageTintColor" red="0.18431372549019609" green="0.21176470588235294" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="0Sq-My-Oc1" kind="relationship" relationship="viewControllers" id="zrY-0W-3xq"/>
+                        <segue destination="32D-Pb-mNe" kind="relationship" relationship="viewControllers" id="zrY-0W-3xq"/>
                         <segue destination="b1j-Vo-mo2" kind="relationship" relationship="viewControllers" id="wpO-7g-OFy"/>
                     </connections>
                 </tabBarController>
@@ -536,6 +566,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irm-Ez-qVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="741.60000000000002" y="1579.8029556650247"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="X6r-Sb-bQR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="32D-Pb-mNe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="homeUnselectedIc" selectedImage="homeSelectedIc" id="eKN-hv-Mah"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SoO-WL-1Ph">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Sq-My-Oc1" kind="relationship" relationship="rootViewController" id="SEI-Zj-wX3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otW-bd-6tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="835.71428571428578"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

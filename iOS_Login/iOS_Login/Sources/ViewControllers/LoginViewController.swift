@@ -13,27 +13,27 @@ class LoginViewController: UIViewController {
     var name: String?
     var pass: String?
     
-    @IBOutlet var nameTextField: UITextField!
-    @IBOutlet var passTextField: UITextField!
-    
     @IBAction func logoutButton(_ sender: Any) {
-          self.dismiss(animated: true, completion: nil)
+        autoLogout()
+    }
+
+    func autoLogout(){
+        UserDefaults.standard.removeObject(forKey: "id")
+        UserDefaults.standard.removeObject(forKey: "pw")
+
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
-    private func setLabels(){
-           guard let name = self.name else { return }
-           guard let pass = self.pass else { return }
-           
-           //nameTextField.text = name
-           //passTextField.text = pass
-       }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func setNavi(){
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.isNavigationBarHidden = true
-        setLabels()
+
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //setLabels()
+        setNavi()
         // Do any additional setup after loading the view.
     }
     
